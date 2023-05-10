@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="Продукты онлайн" />
+    <meta name="description" content="Продукты питания онлайн:фрукты, овощи, мясо, хлеб" />
+    <title>Shop products</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div class="__container">
+      <!-- Header -->
+      <header class="header">
+        <!-- top-header -->
+        <div class="header__top top-header">
+          <div class="top-header__logo">
+            <a href="/"><img src="./images/logo.svg" alt="logo" /></a>
+          </div>
+          <div class="top-header__search">
+            <form action="#" class="search-header">
+              <input type="text" class="search-header__input" value="" placeholder="Search products" />
+              <button class="search-header__button">
+                <img src="images/icons/search-icon.svg" alt="icon-search" />
+              </button>
+            </form>
+          </div>
+          <!-- Actions icon-->
+          <div class="top-header__actions header-actions">
+            <div class="header-actions__user">
+              <a href=""><img src="./images/icons/user-icon.svg" alt="user-icon" /> </a>
+            </div>
+            <div class="header-actions__cart">
+              <a href="/cart.html"
+                ><img src="./images/icons/cart-icon.svg" alt="user-cart" /><span class="header-actions__count" data-cart>0</span></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- bottom-header -->
+        <div class="header__bottom bottom-header">
+          <div class="bottom-header__menu menu">
+            <!-- burger -->
+            <div class="menu__icon icon-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item"><a href="" class="menu__link checked" data-name="All">All</a></li>
+                <li class="menu__item"><a href="" class="menu__link" data-name="Fruits">Fruits</a></li>
+                <li class="menu__item"><a href="" class="menu__link" data-name="Meat">Meat</a></li>
+                <li class="menu__item"><a href="" class="menu__link" data-name="Drinks">Drinks</a></li>
+                <li class="menu__item"><a href="" class="menu__link" data-name="Bakery">Bakery</a></li>
+                <li class="menu__item"><a href="" class="menu__link" data-name="Snacks">Snacks</a></li>
+                <li class="menu__item"><a href="" class="menu__link" data-name="Grocery">Grocery</a></li>
+              </ul>
+            </nav>
+            <div class="top-header__logo__mobile">
+              <a href="/"><img src="./images/logo.svg" alt="logo" /></a>
+            </div>
+            <!-- Actions mobile block-->
+            <div class="top-header__actions header-actions-mobile">
+              <div class="header-actions__user">
+                <a href=""><img src="./images/icons/user-icon.svg" alt="user-icon" /></a>
+              </div>
+              <div class="header-actions__cart">
+                <a href="/cart.html"
+                  ><img src="./images/icons/cart-icon.svg" alt="user-cart" />
+                  <span class="header-actions__count" data-cart>0</span>
+                </a>
+              </div>
+            </div>
+            <!-- Actions -->
+          </div>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main class="page">
+        <h1 class="hidden">Shop</h1>
+        <div class="page__wrapper">
+          <!-- page__nav -->
+          <nav class="page__nav page-nav">
+            <h2 class="page-nav__title">Category menu:</h2>
+            <ul class="page-nav__list">
+              <li class="page-nav__item"><a href="" class="page-nav__link" data-filter="Bakery">Bakery</a></li>
+              <li class="page-nav__item"><a href="" class="page-nav__link" data-filter="Fruits">Fruits</a></li>
+              <li class="page-nav__item"><a href="" class="page-nav__link" data-filter="Meat">Meat</a></li>
+              <li class="page-nav__item"><a href="" class="page-nav__link" data-filter="Drinks">Drinks</a></li>
+              <li class="page-nav__item"><a href="" class="page-nav__link" data-filter="Vegetables">Vegetables</a></li>
+              <li class="page-nav__item"><a href="" class="page-nav__link" data-filter="Snacks">Snacks</a></li>
+              <li class="page-nav__item"><a href="" class="page-nav__link" data-filter="Grocery">Grocery</a></li>
+            </ul>
+          </nav>
+          <div class="page__content">
+            <!-- Banners -->
+            <article class="page__banners banners">
+              <div class="banners__card">
+                <h2 class="banners__title">Space for heading</h2>
+                <button class="banners__btn">Read recepies</button>
+              </div>
+            </article>
+
+            <!-- Сортировка товаров -->
+            <div class="page__sort sort">
+              <div class="sort__title">Sort by: <span class="sort__text">inexpensive</span></div>
+              <div class="sort__content">
+                <ul>
+                  <li class="sort__item checked" data-sort="inexpensive">inexpensive</li>
+                  <li class="sort__item" data-sort="expensive">expensive</li>
+                </ul>
+              </div>
+            </div>
+            <!-- Products -->
+            <section class="page__products products">
+              <h2 class="product__title hidden">Products</h2>
+              <div class="products__items">
+                <!-- card -->
+              </div>
+              <button class="products__more">More products...</button>
+            </section>
+            <article class="page__banners banners">
+              <div class="banners__card">
+                <h2 class="banners__title">Space for heading</h2>
+                <button class="banners__btn">Read recepies</button>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Comments -->
+        <section class="page__comments comments">
+          <div class="comments__header">
+            <h2 class="comments__title">Our customers says</h2>
+            <a href="#" class="comments__btn">Button</a>
+          </div>
+
+          <div class="comments__slider swiper">
+            <div class="comments__wrapper swiper-wrapper">
+              <div class="comments__slide swiper-slide slide-comments">
+                <p class="slide-comments__text">
+                  “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a
+                  text here “
+                </p>
+                <div class="slide-comments__name">Name and Surname</div>
+                <a href="" class="slide-comments__img"><img src="./images/avatar.png" alt="" /></a>
+              </div>
+              <div class="comments__slide swiper-slide slide-comments">
+                <p class="slide-comments__text">
+                  “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a
+                  text here “
+                </p>
+                <div class="slide-comments__name">Name and Surname</div>
+                <a href="" class="slide-comments__img"><img src="./images/avatar.png" alt="" /></a>
+              </div>
+              <div class="comments__slide swiper-slide slide-comments">
+                <p class="slide-comments__text">
+                  “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a
+                  text here “
+                </p>
+                <div class="slide-comments__name">Name and Surname</div>
+                <a href="" class="slide-comments__img"><img src="./images/avatar.png" alt="" /></a>
+              </div>
+              <div class="comments__slide swiper-slide slide-comments">
+                <p class="slide-comments__text">
+                  “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a
+                  text here “
+                </p>
+                <div class="slide-comments__name">Name and Surname</div>
+                <a href="" class="slide-comments__img"><img src="./images/avatar.png" alt="" /></a>
+              </div>
+              <div class="comments__slide swiper-slide slide-comments">
+                <p class="slide-comments__text">
+                  “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a
+                  text here “
+                </p>
+                <div class="slide-comments__name">Name and Surname</div>
+                <a href="" class="slide-comments__img"><img src="./images/avatar.png" alt="" /></a>
+              </div>
+              <div class="comments__slide swiper-slide slide-comments">
+                <p class="slide-comments__text">
+                  “ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a
+                  text here “
+                </p>
+                <div class="slide-comments__name">Name and Surname</div>
+                <a href="" class="slide-comments__img"><img src="./images/avatar.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="comments__btn-prev">
+              <img src="./images/icons/arrow-left.svg" alt="arrow" />
+            </div>
+            <div class="comments__btn-next">
+              <img src="./images/icons/arrow-rigth.svg" alt="arrow" />
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__top top-footer">
+          <div class="top-footer__column">
+            <div class="top-footer__item item-footer">
+              <div class="item-footer__title">Get in touch</div>
+              <ul class="item-footer__list">
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">About Us</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Careers</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Careers</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-footer__item item-footer">
+              <div class="item-footer__title">Connections</div>
+              <ul class="item-footer__list">
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Facebook</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Twitter</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Instagram</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Youtube</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-footer__item item-footer">
+              <div class="item-footer__title">Earnings</div>
+              <ul class="item-footer__list">
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Earnings</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Advertise your product</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Sell on Market</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-footer__item item-footer">
+              <div class="item-footer__title">Account</div>
+              <ul class="item-footer__list">
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Your account</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Your acocount</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">100 % purchase protection</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Chat with us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom bottom-footer">
+          <h3 class="bottom-footer__title">Product tags</h3>
+          <a class="bottom-footer__tags" href="">Beans</a>
+          <a class="bottom-footer__tags" href="">Carrots</a>
+          <a class="bottom-footer__tags" href="">Apples</a>
+          <a class="bottom-footer__tags" href="">Garlic</a>
+          <a class="bottom-footer__tags" href="">Mushrooms</a>
+          <a class="bottom-footer__tags" href="">Tomatoes</a>
+          <a class="bottom-footer__tags" href="">Lemons</a>
+          <a class="bottom-footer__tags" href="">Oranges</a>
+          <a class="bottom-footer__tags" href="">Bananas</a>
+          <a class="bottom-footer__tags" href="">Garlic</a>
+          <a class="bottom-footer__tags" href="">Mushrooms</a>
+          <a class="bottom-footer__tags" href="">Tomatoes</a>
+          <a class="bottom-footer__tags" href="">Lemons</a>
+          <a class="bottom-footer__tags" href="">Oranges</a>
+          <a class="bottom-footer__tags" href="">Bananas</a>
+        </div>
+        <div class="footer__copi copi">
+          <div class="copi__span">
+            <span>Copyright © 2020 petrbilek.com</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>

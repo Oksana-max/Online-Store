@@ -1,0 +1,270 @@
+.top-header {
+  box-shadow: 0px 8px 11px 2px rgba(209, 226, 220, 0.54);
+}
+.top-header__logo__mobile {
+  padding: 15px 5px 10px 25px;
+}
+
+.cart {
+  margin-top: 50px;
+  margin-bottom: 70px;
+  padding: 0px 40px 25px;
+
+  &__name {
+    margin-bottom: 30px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+  }
+  &__empty {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 18px;
+  }
+  &__item {
+    flex: 0 1 150px;
+  }
+  &__wrapper {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  hr {
+    height: 1px;
+    margin-bottom: 15px;
+    background-color: #c8c4c4;
+  }
+  &__total {
+    margin-bottom: 20px;
+    margin-top: 40px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 22px;
+  }
+  &__order {
+    padding: 4px 18px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ffffff;
+    background: #6a983c;
+    border: 2px solid #a5db64;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+    &:hover {
+      color: #000000;
+      background: #a9be94;
+    }
+  }
+}
+.item {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 16px;
+  flex-wrap: wrap;
+  border: 1px solid rgb(233, 216, 233);
+  border-radius: 10px;
+
+  &__delete {
+    position: absolute;
+    top: 4%;
+    right: 9%;
+    cursor: pointer;
+    color: #6a983c;
+    transition: all 0.3s ease;
+    &:hover {
+      color: #000000;
+    }
+  }
+  &__content {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  &__img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__title {
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &__description {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 16px;
+    color: #575757;
+  }
+
+  &__price {
+    margin-bottom: 10px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 27px;
+  }
+
+  &__count {
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 27px;
+  }
+}
+
+//Модальное окно заказа в корзине
+.modal-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #57575772;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.modal-open {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 100;
+  transition: all 0.4s;
+}
+.modal-order {
+  display: none;
+  overflow: auto;
+  height: 700px;
+  max-width: 800px;
+  z-index: 200;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  margin-top: 30px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 8px 11px 2px rgba(209, 226, 220, 0.54);
+  @media (max-width: 400px) {
+    padding: 5px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__reset {
+    cursor: pointer;
+    &:hover {
+      color: #6a983c;
+    }
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
+    @media (max-width: 400px) {
+      padding: 5px;
+      border: none;
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+}
+.product-order {
+  &__list {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #6a983c;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    &:not(:last-child) {
+      border-bottom: 1px solid rgb(211, 211, 211);
+    }
+  }
+  &__name {
+    width: 45%;
+    word-break: break-all;
+  }
+  &__price {
+    width: 30%;
+    span {
+      display: inline-block;
+      margin-top: 5px;
+    }
+  }
+  &__count {
+    width: 25%;
+    span {
+      display: inline-block;
+      margin-top: 5px;
+    }
+  }
+  &__quantity {
+    margin-bottom: 10px;
+  }
+  &__sum {
+    font-size: 20px;
+  }
+}
+.order {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+  &__label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  &__text {
+    margin-right: 10px;
+  }
+  &__input {
+    width: 240px;
+    height: 45px;
+    padding: 0px 20px 0px 20px;
+    background: #f3f0f0;
+    border-radius: 4px;
+    border: none;
+    
+  }
+}

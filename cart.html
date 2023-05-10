@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop products</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="__container">
+      <header class="header">
+        <!-- top-header -->
+        <div class="header__top top-header">
+          <div class="top-header__logo">
+            <a href="/"><img src="./images/logo.svg" alt="logo" /></a>
+          </div>
+          <div class="top-header__search">
+            <form action="#" class="search-header">
+              <input type="text" class="search-header__input" value="" placeholder="Search products" />
+              <button class="search-header__button">
+                <img src="images/icons/search-icon.svg" alt="" />
+              </button>
+            </form>
+          </div>
+          <!-- Actions icon-->
+          <div class="top-header__actions header-actions">
+            <div class="header-actions__user">
+              <a href=""><img src="./images/icons/user-icon.svg" alt="user-icon" /> </a>
+            </div>
+            <div class="header-actions__cart">
+              <a href="/cart.html"
+                ><img src="./images/icons/cart-icon.svg" alt="user-cart" />
+                <span class="header-actions__count">0</span>
+              </a>
+            </div>
+          </div>
+          <!-- Actions icon -->
+        </div>
+        <div class="top-header__logo__mobile">
+          <a href="/"><img src="./images/logo.svg" alt="logo" /></a>
+        </div>
+      </header>
+      <main class="cart">
+        <h1 class="cart__name">Cart:</h1>
+        <div class="cart__wrapper">
+          <!-- item -->
+
+          <!-- item -->
+        </div>
+        <hr />
+        <div class="cart__total">Total: <span>0</span><span> USD</span></div>
+        <button class="cart__order">Make an order</button>
+
+        <!-- Modal order -->
+        <div class="modal-wrapper">
+          <div class="cart__modal-order modal-order">
+            <div class="modal-order__top">
+              <h3 class="modal-order__title">Your order</h3>
+              <span class="modal-order__reset">X</span>
+            </div>
+
+            <div class="modal-order__info">
+              <div class="modal-order__products product-order">
+                <ul class="product-order__list"></ul>
+                <div class="product-order__quantity">Count of goods: <span>0</span></div>
+                <div class="product-order__sum">Total of order: <span>0 usd</span></div>
+              </div>
+            </div>
+            <form action="mail.php" method="POST" enctype="multipart/form-data" class="modal-order__form order">
+              <input type="hidden" name="admin_email[]" value="oksana-91-oks@mail.ru" />
+              <label class="order__label">
+                <span class="order__text">Name:</span>
+                <input type="text" class="order__input name" name="name" placeholder="Your name" />
+              </label>
+              <label class="order__label">
+                <span class="order__text">Phone:</span>
+                <input type="tel" class="order__input tel" data-validate-field="tel" name="phone" placeholder="+7(___)___-__-__" />
+              </label>
+              <label class="order__label">
+                <span class="order__text">Email:</span>
+                <input type="email" class="order__input email" name="email" data-validate-field="email" placeholder="aerd@gmail.com" />
+              </label>
+              <input type="file" class="order__input" name="file[]" multiple id="myfile" />
+              <button class="order__btn btn">Submit</button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__top top-footer">
+          <div class="top-footer__column">
+            <div class="top-footer__item item-footer">
+              <div class="item-footer__title">Get in touch</div>
+              <ul class="item-footer__list">
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">About Us</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Careers</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Careers</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-footer__item item-footer">
+              <div class="item-footer__title">Connections</div>
+              <ul class="item-footer__list">
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Facebook</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Twitter</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Instagram</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Youtube</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-footer__item item-footer">
+              <div class="item-footer__title">Earnings</div>
+              <ul class="item-footer__list">
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Earnings</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Advertise your product</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Sell on Market</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-footer__item item-footer">
+              <div class="item-footer__title">Account</div>
+              <ul class="item-footer__list">
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Your account</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Your acocount</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">100 % purchase protection</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Chat with us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom bottom-footer">
+          <h3 class="bottom-footer__title">Product tags</h3>
+          <a class="bottom-footer__tags" href="">Beans</a>
+          <a class="bottom-footer__tags" href="">Carrots</a>
+          <a class="bottom-footer__tags" href="">Apples</a>
+          <a class="bottom-footer__tags" href="">Garlic</a>
+          <a class="bottom-footer__tags" href="">Mushrooms</a>
+          <a class="bottom-footer__tags" href="">Tomatoes</a>
+          <a class="bottom-footer__tags" href="">Lemons</a>
+          <a class="bottom-footer__tags" href="">Oranges</a>
+          <a class="bottom-footer__tags" href="">Bananas</a>
+          <a class="bottom-footer__tags" href="">Garlic</a>
+          <a class="bottom-footer__tags" href="">Mushrooms</a>
+          <a class="bottom-footer__tags" href="">Tomatoes</a>
+          <a class="bottom-footer__tags" href="">Lemons</a>
+          <a class="bottom-footer__tags" href="">Oranges</a>
+          <a class="bottom-footer__tags" href="">Bananas</a>
+        </div>
+        <div class="footer__copi copi">
+          <div class="copi__span">
+            <span>Copyright © 2020 petrbilek.com</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+    <script src="inputmask.min.js"></script>
+    <script type="module" src="./js/index.js"></script>
+    <script type="module" src="./js/cart.js"></script>
+  </body>
+</html>

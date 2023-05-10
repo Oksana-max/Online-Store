@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop products</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div class="__container">
+      <header class="header">
+        <!-- top-header -->
+        <div class="header__top top-header">
+          <div class="top-header__logo">
+            <a href="/"><img src="./images/logo.svg" alt="logo" /></a>
+          </div>
+          <div class="top-header__search">
+            <form action="#" class="search-header">
+              <input type="text" class="search-header__input" value="" placeholder="Search products" />
+              <button class="search-header__button">
+                <img src="images/icons/search-icon.svg" alt="" />
+              </button>
+            </form>
+          </div>
+          <!-- Actions icon-->
+          <div class="top-header__actions header-actions">
+            <div class="header-actions__user">
+              <a href=""><img src="./images/icons/user-icon.svg" alt="user-icon" /> </a>
+            </div>
+            <div class="header-actions__cart">
+              <a href="/cart.html"
+                ><img src="./images/icons/cart-icon.svg" alt="user-cart" />
+                <span class="header-actions__count">0</span>
+              </a>
+            </div>
+          </div>
+          <!-- Actions icon -->
+        </div>
+
+        <!-- bottom-header -->
+        <div class="header__bottom bottom-header">
+          <div class="bottom-header__menu menu">
+            <!-- burger -->
+            <div class="menu__icon icon-menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!--// burger -->
+            <nav class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="" class="menu__link checked" data-name="All">All</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link" data-name="Fruits">Fruits</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link" data-name="Meat">Meat</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link" data-name="Drinks">Drinks</a>
+                </li>
+                <li class="menu__item">
+                  <a href="" class="menu__link" data-name="Bakery">Bakery</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="top-header__logo__mobile">
+              <a href="/"><img src="./images/logo.svg" alt="logo" /></a>
+            </div>
+            <!-- Actions mobile block-->
+            <div class="top-header__actions header-actions-mobile">
+              <div class="header-actions__user">
+                <a href=""><img src="./images/icons/user-icon.svg" alt="user-icon" /> </a>
+              </div>
+              <div class="header-actions__cart">
+                <a href="/cart.html"
+                  ><img src="./images/icons/cart-icon.svg" alt="user-cart" />
+                  <span class="header-actions__count">0</span>
+                </a>
+              </div>
+            </div>
+            <!-- Actions -->
+          </div>
+        </div>
+      </header>
+      <main class="product">
+        <div class="product__content">
+          <div class="product__top product-top">
+            <div class="product-top__left">
+              <ul class="product-top__thumbs">
+                <li class="product-top__thumb"><img src="./images/empty.png" alt="image" /></li>
+                <li class="product-top__thumb"><img src="./images/empty.png" alt="image" /></li>
+                <li class="product-top__thumb"><img src="./images/empty.png" alt="image" /></li>
+              </ul>
+              <div class="product-top__img"><img src="./images/bread.jpg" alt="image" /></div>
+            </div>
+            <div class="product-top__right">
+              <div class="product-top__info product-info">
+                <div class="product-info__title">Bread</div>
+                <div class="product-info__raiting">$$$$$</div>
+                <div class="product-info__price">120$</div>
+                <button class="product-info__btn btn btn-product">Add to carts</button>
+              </div>
+            </div>
+          </div>
+          <div class="product__bottom product-bottom">
+            <div class="product-bottom__info">
+              <div class="product-bottom__title">About product :</div>
+              <div class="product-bottom__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos consequatur reiciendis molestias beatae voluptates explicabo modi
+                eligendi laudantium fugiat odit expedita assumenda omnis praesentium ea harum, facilis natus sequi sit.
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__top top-footer">
+          <div class="top-footer__column">
+            <div class="top-footer__item item-footer">
+              <div class="item-footer__title">Get in touch</div>
+              <ul class="item-footer__list">
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">About Us</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Careers</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Careers</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Blog</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-footer__item item-footer">
+              <div class="item-footer__title">Connections</div>
+              <ul class="item-footer__list">
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Facebook</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Twitter</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Instagram</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Youtube</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-footer__item item-footer">
+              <div class="item-footer__title">Earnings</div>
+              <ul class="item-footer__list">
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Earnings</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Advertise your product</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Sell on Market</a>
+                </li>
+              </ul>
+            </div>
+            <div class="top-footer__item item-footer">
+              <div class="item-footer__title">Account</div>
+              <ul class="item-footer__list">
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Your account</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Your acocount</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">100 % purchase protection</a>
+                </li>
+                <li class="item-footer__line">
+                  <a class="item-footer__link" href="">Chat with us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom bottom-footer">
+          <h3 class="bottom-footer__title">Product tags</h3>
+          <a class="bottom-footer__tags" href="">Beans</a>
+          <a class="bottom-footer__tags" href="">Carrots</a>
+          <a class="bottom-footer__tags" href="">Apples</a>
+          <a class="bottom-footer__tags" href="">Garlic</a>
+          <a class="bottom-footer__tags" href="">Mushrooms</a>
+          <a class="bottom-footer__tags" href="">Tomatoes</a>
+          <a class="bottom-footer__tags" href="">Lemons</a>
+          <a class="bottom-footer__tags" href="">Oranges</a>
+          <a class="bottom-footer__tags" href="">Bananas</a>
+          <a class="bottom-footer__tags" href="">Garlic</a>
+          <a class="bottom-footer__tags" href="">Mushrooms</a>
+          <a class="bottom-footer__tags" href="">Tomatoes</a>
+          <a class="bottom-footer__tags" href="">Lemons</a>
+          <a class="bottom-footer__tags" href="">Oranges</a>
+          <a class="bottom-footer__tags" href="">Bananas</a>
+        </div>
+        <div class="footer__copi copi">
+          <div class="copi__span">
+            <span>Copyright © 2020 petrbilek.com</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>

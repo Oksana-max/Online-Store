@@ -1,0 +1,202 @@
+ [
+    {
+        "id": "G1131141111",
+        "name": "Apple",
+        "description": "Description of product",
+        "image":"./images/apple.jpg",
+        "price": 2,
+        "category": "Fruits"
+    }, 
+    {
+        "id": "G1131141111",
+        "name": "Apple",
+        "description": "Description of product",
+        "image":"./images/apple.jpg",
+        "price": 2,
+        "category": "Fruits"
+    },
+    {
+        "id": "G1131141111",
+        "name": "Apple",
+        "description": "Description of product",
+        "image":"./images/apple.jpg",
+        "price": 2,
+        "category": "Fruits"
+    },
+    {
+        "id": "G1131141111",
+        "name": "Apple",
+        "description": "Description of product",
+        "image":"./images/apple.jpg",
+        "price": 2,
+        "category": "Fruits"
+    },
+    {
+        "id": "A111911111",
+        "name": "Chicken +",
+        "description": "Description of product",
+        "image":"./images/chicken.jpg",
+        "price": 6,
+        "category": "Meat"
+    },  
+    {
+        "id": "G292225222",
+        "name": "Bananas",
+        "description": "Description of product",
+        "image":"./images/bananas.jpg",
+        "price": 3.99,
+        "category": "Fruits"
+    },
+    {
+        "id": "G292225222",
+        "name": "Bananas",
+        "description": "Description of product",
+        "image":"./images/bananas.jpg",
+        "price": 3.99,
+        "category": "Fruits"
+    },
+    {
+        "id": "G292225222",
+        "name": "Bananas",
+        "description": "Description of product",
+        "image":"./images/bananas.jpg",
+        "price": 3.99,
+        "category": "Fruits"
+    },
+    {
+        "id": "A111911111",
+        "name": "Chicken +",
+        "description": "Description of product",
+        "image":"./images/chicken.jpg",
+        "price": 6,
+        "category": "Meat"
+    },
+    {
+        "id": "A111911111",
+        "name": "Chicken",
+        "description": "Description of product",
+        "image":"./images/chicken.jpg",
+        "price": 5.99,
+        "category": "Meat"
+    },  
+    {
+        "id": "A111911111",
+        "name": "Chicken",
+        "description": "Description of product",
+        "image":"./images/chicken.jpg",
+        "price": 5.99,
+        "category": "Meat"
+    },  
+    {
+        "id": "A111911111",
+        "name": "Chicken",
+        "description": "Description of product",
+        "image":"./images/chicken.jpg",
+        "price": 5.99,
+        "category": "Meat"
+    },  
+    {
+        "id": "A111911111",
+        "name": "Chicken",
+        "description": "Description of product",
+        "image":"./images/chicken.jpg",
+        "price": 5.99,
+        "category": "Meat"
+    },  
+    {
+        "id": "A111911111",
+        "name": "Chicken",
+        "description": "Description of product",
+        "image":"./images/chicken.jpg",
+        "price": 5.99,
+        "category": "Meat"
+    },  
+    {
+        "id": "B118911111",
+        "name": "Beef",
+        "description": "Description of product",
+        "image":"./images/beef.jpg",
+        "price": 10.99,
+        "category": "Meat"
+    },
+    {
+        "id": "B118911111",
+        "name": "Beef",
+        "description": "Description of product",
+        "image":"./images/beef.jpg",
+        "price": 10.99,
+        "category": "Meat"
+    },
+    {
+        "id": "C1112311111",
+        "name": "Bread",
+        "description": "Description of product",
+        "image":"./images/bread.jpg",
+        "price": 1,
+        "category": "Bakery"
+    },
+    {
+        "id": "C1112311111",
+        "name": "Bread",
+        "description": "Description of product",
+        "image":"./images/bread.jpg",
+        "price": 1,
+        "category": "Bakery"
+    },
+    {
+        "id": "C2222224522",
+        "name": "Cake",
+        "description": "Description of product",
+        "image":"./images/cake.jpg",
+        "price": 4.99,
+        "category": "Bakery"
+    },
+    {
+        "id": "C2222224522",
+        "name": "Cake",
+        "description": "Description of product",
+        "image":"./images/cake.jpg",
+        "price": 4.99,
+        "category": "Bakery"
+    },
+    {
+        "id": "D1111190111",
+        "name": "Orange-juice",
+        "description": "Description of product",
+        "image":"./images/orange-juice.jpg",
+        "price": 1.89,
+        "category": "Drinks"
+    },
+    {
+        "id": "K222221222",
+        "name": "Apple-juice",
+        "description": "Description of product",
+        "image":"./images/apple-juice.jpg",
+        "price": 1.99,
+        "category": "Drinks"
+    },
+    {
+        "id": "K222221222",
+        "name": "Apple-juice",
+        "description": "Description of product",
+        "image":"./images/apple-juice.jpg",
+        "price": 1.99,
+        "category": "Drinks"
+    },
+    {
+        "id": "K222221222",
+        "name": "Apple-juice",
+        "description": "Description of product",
+        "image":"./images/apple-juice.jpg",
+        "price": 1.99,
+        "category": "Drinks"
+    },
+    {
+        "id": "G1131141111",
+        "name": "Apple",
+        "description": "Description of product",
+        "image":"./images/apple.jpg",
+        "price": 2.99,
+        "category": "Fruits"
+    }
+]
