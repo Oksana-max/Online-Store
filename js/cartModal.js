@@ -160,4 +160,4 @@ export function cartModal() {
       e.target.reset();
     });
 }
-cartModal();
+
