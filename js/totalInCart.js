@@ -1,6 +1,8 @@
 export function total() {
+    const cart = document.querySelector(".cart");
   
-    const items = document.querySelectorAll(".item");
+     if (cart) {
+    const items = cart.querySelectorAll(".item");
     let totalBlock = document.querySelector(".cart__total");
     totalBlock = totalBlock.querySelector("span");
     let total = 0;
@@ -14,5 +16,6 @@ export function total() {
         totalBlock.innerHTML = total.toFixed(2);
       });
     }
+  }
   
 }
