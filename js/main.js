@@ -40,9 +40,9 @@ export function render(quantity = 6, filterValue = "All", value = "", sortText =
           products = `
               <div class="products__card card-pr" data-id = ${newData[i].id} data-category = ${newData[i].category}>
                 <div class="card-pr__img">
-                  <a href="../product.html"><img src="${newData[i].image}" alt="product" class="card-pr__image"/></a>
+                  <a href="product.html"><img src="${newData[i].image}" alt="product" class="card-pr__image"/></a>
                 </div>
-                <a href="../product.html" class="card-pr__title">${newData[i].name}</a>
+                <a href="product.html" class="card-pr__title">${newData[i].name}</a>
                 <div class="card-pr__description">
                 ${newData[i].description}
                 </div>
