@@ -1,4 +1,5 @@
 export function renderCart() {
+  const cart = document.querySelector(".cart");
   const items = document.querySelectorAll(".item");
   const iconCart = document.querySelectorAll(".header-actions__count");
   let newStorage = [];
@@ -17,7 +18,7 @@ export function renderCart() {
   localStorage.setItem("cart", JSON.stringify(newStorage));
 
   //Находим  все иконки count у корзины , проходим по ним и добавляем count в LocalStorage(обновляем LocalStorage)
-  if (window.location.pathname === "/cart.html") {
+  if (cart) {
     iconCart.forEach((icon) => {
       localStorage.setItem("iconCart", JSON.stringify(icon.innerText));
     });
