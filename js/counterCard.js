@@ -4,6 +4,7 @@ import { deleteItemFromCart } from "./deleteItemFromCart.js";
 export function counterInCard() {
   let counter;
   let counterWrapper;
+  let cart = document.querySelector(".cart");
   const iconCart = document.querySelectorAll(".header-actions__count");
   document.addEventListener("click", (e) => {
     if (e.target.dataset.action === "plus" || e.target.dataset.action === "minus") {
@@ -20,7 +21,7 @@ export function counterInCard() {
       total();
 
       //При нажатии кнопки "плюс" добавляем единицу к iconCart
-      if (window.location.pathname === "/cart.html") {
+      if (cart) {
         iconCart.forEach((icon) => {
           icon.innerText = parseInt(icon.innerText) + 1;
         });
@@ -35,7 +36,7 @@ export function counterInCard() {
 
         total();
         //При нажатии кнопки "минус" убавляем единицу из iconCart
-        if (window.location.pathname === "/cart.html") {
+        if (cart) {
           iconCart.forEach((icon) => {
             icon.innerText = parseInt(icon.innerText) - 1;
           });
@@ -44,7 +45,7 @@ export function counterInCard() {
       }
 
       //Если при нажатии на "минус" count становится меньше 1, то товар удаляется
-      if (window.location.pathname === "/cart.html") {
+      if (cart) {
         if (counter.innerText < 1) {
           const deleteItem = e.target.parentNode.parentNode;
           deleteItemFromCart(deleteItem);
