@@ -202,7 +202,7 @@ function sort() {
   }
   document.addEventListener("click", (e) => {
     const target = e.target;
-    if (!target.closest(".sort__content") && !target.closest(".sort__text")) {
+    if (!target.closest(".sort__content") && !target.closest(".sort__text") || target.classList.contains("sort__item")) {
       if (sortContent) {
         sortContent.classList.remove("open");
       }
