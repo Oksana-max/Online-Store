@@ -89,7 +89,8 @@ h6 {
 
 /*--------------------*/
 body {
-  font-family: 'Roboto', sans-serif, 'Play', sans-serif, 'UniSans', 'Poppins', 'Open Sans';
+  font-family: 'Roboto', sans-serif, 'Play', sans-serif, 'UniSans', 'Poppins',
+ 'Open Sans';
   background: #e5e5e5;
   color: #151515;
 }
@@ -719,6 +720,7 @@ body {
   transition: visibility 0s 0s, opacity 0.4s ease;
   opacity: 1;
   visibility: visible;
+  z-index:20;
 }
 
 .sort__item {
